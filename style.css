@@ -21,6 +21,16 @@ img {
     display: grid;
     max-width: 960px;
     margin: 0 auto;
+	
+
+}
+
+
+.grid-template-area-header{
+    grid-template-areas:
+    "logo nav";
+    padding:30px 2%;
+    grid-template-columns: 1fr 3fr;
 }
 
 .logo {
@@ -38,6 +48,14 @@ img {
     font-size: 16px;
     color:#111;
     padding: 16px  8px;
+}
+
+.grid-template-area-content{
+    grid-template-areas:
+    "slider"
+    "content";
+	grid-gap:20px;
+	padding: 0 2%;
 }
 
 .slider {
@@ -60,31 +78,35 @@ img {
     grid-area: content;
 }
 
-.cards{
-   grid-area: cards;
+
+.grid-template-area-cards {
+grid-template-columns: 1fr 1fr 1fr;
+/*grid-template-areas:
+"card1 card2  card3"
+"card card card";*/
+grid-gap:10px;
 }
+ 
+.card img {
+	    border-radius: 15px 15px 15px 15px;
+}
+
+/*
+.card{grid-area: card;}
+.cards-2{grid-area: cards-2;}
+.cards-3{grid-area: cards-3;}
+.cards-4{grid-area: cards-4;}
+.cards-5{grid-area: cards-5;}
+.cards-6{grid-area: cards-6;}*/
+
 .footer {
-    grid-area: footer;
+
     background: #EEEEEE;
     text-align: center;
     padding:20px;
+	margin-top:50px;
 }
 
-.grid-template-area-header{
-    grid-template-areas:
-    "logo nav";
-    padding:30px 0px;
-    grid-template-columns: 1fr 3fr;
-}
 
-.grid-template-area-content{
-    grid-template-areas:
-    "slider"
-    "content" 
-    "footer";
-}
 
-.grid-template-area-cards {
-    grid-template-areas:
-"cards cards cards";
-}
+
