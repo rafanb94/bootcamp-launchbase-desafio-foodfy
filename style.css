@@ -33,7 +33,7 @@ img {
 }
 
 .logo {
-    grid-area:logo
+    grid-area:logo;
 }
 
 .nav {
@@ -52,7 +52,9 @@ img {
 .grid-template-area-content{
     grid-template-areas:
     "slider"
-    "content";
+    "title"
+    "content"
+    "footer";
 	grid-gap:20px;
 	padding: 0 2%;
 }
@@ -78,21 +80,23 @@ img {
 }
 .slider__content h1{
     font-size: 2em;
-
-
-
 }
+
+.footer {
+    grid-area:footer;
+}
+
 
 .grid-template-area-cards {
 grid-template-columns: 1fr 1fr 1fr;
 /*grid-template-areas:
-"card1 card2  card3"
+"card1 card2 card3"
 "card card card";*/
 grid-gap:20px;
 }
  
 .card img {
-        border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
         
 }
 
@@ -119,7 +123,7 @@ color: #777777;
     background: #EEEEEE;
     text-align: center;
     padding:20px;
-	margin-top:50px;
+	margin-top:60px;
 }
 
 .footer h3 {
@@ -127,5 +131,3 @@ font-size: 14px;
 color: #999999;
 text-align: center;
 }
-
-
