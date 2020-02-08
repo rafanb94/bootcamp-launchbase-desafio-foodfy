@@ -3,7 +3,9 @@
     margin:0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 a {
     text-decoration: none;
 }
@@ -19,12 +21,9 @@ img {
 /* Grid Header Container*/
 .grid {
     display: grid;
-    max-width: 960px;
+    width:960px;
     margin: 0 auto;
-	
-
 }
-
 
 .grid-template-area-header{
     grid-template-areas:
@@ -77,18 +76,34 @@ img {
 .content {
     grid-area: content;
 }
+.slider__content h1{
+    font-size: 2em;
 
+
+
+}
 
 .grid-template-area-cards {
 grid-template-columns: 1fr 1fr 1fr;
 /*grid-template-areas:
 "card1 card2  card3"
 "card card card";*/
-grid-gap:10px;
+grid-gap:20px;
 }
  
 .card img {
-	    border-radius: 15px 15px 15px 15px;
+        border-radius: 15px 15px 15px 15px;
+        
+}
+
+.receitas__title h2 {
+    padding-top:10px;
+    font-size: 18px;
+    color: #111111;
+}
+.receitas__title p{
+font-size: 14px;
+color: #777777;
 }
 
 /*
@@ -107,6 +122,10 @@ grid-gap:10px;
 	margin-top:50px;
 }
 
-
+.footer h3 {
+font-size: 14px;
+color: #999999;
+text-align: center;
+}
 
 
