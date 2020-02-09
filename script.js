@@ -10,9 +10,7 @@ for (let card of cards) {
     modalOverlay.querySelector(
       'img'
     ).src = `assets/${receitaID}`+'.png';
-    const x = querySelector('.receitas__title').textContent
-    document.querySelector('.receita__description').innerHTML = x;
-  });
+    });
 }
 
 document.querySelector('.close-modal').addEventListener('click', function() {
