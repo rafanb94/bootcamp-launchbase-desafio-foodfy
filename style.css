@@ -3,9 +3,24 @@
     margin:0;
     box-sizing: border-box;
 }
+html {
+    height:100%;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
+    min-height:100%;
+    position:relative;
 }
+body::after{ content:''; display:block; height:100px; }
+
+footer{ 
+    position:absolute; 
+    bottom:0; 
+    width:100%; 
+    height:50px; 
+  }  
+
 a {
     text-decoration: none;
 }
@@ -52,7 +67,6 @@ img {
 .grid-template-area-content{
     grid-template-areas:
     "slider"
-    "title"
     "content"
     "footer";
 	grid-gap:20px;
@@ -98,6 +112,11 @@ grid-gap:20px;
     border-radius: 15px 15px 15px 15px;
         
 }
+.title-cards {
+    grid-column: 1 / -1;
+}
+
+
 
 .receitas__title h2 {
     padding-top:10px;
@@ -122,7 +141,7 @@ color: #777777;
     background: #EEEEEE;
     text-align: center;
     padding:20px;
-	margin-top:60px;
+    
 }
 
 .footer h3 {
