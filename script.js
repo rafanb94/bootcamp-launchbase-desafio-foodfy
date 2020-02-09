@@ -8,13 +8,14 @@ for (let card of cards) {
     alert(receitaID);
     modalOverlay.classList.add('active');
     modalOverlay.querySelector(
-      "iframe"
-    ).src = `/assets/${receitaID}`;
+      'img'
+    ).src = `assets/${receitaID}`+'.png';
+    const x = querySelector('.receitas__title').textContent
+    document.querySelector('.receita__description').innerHTML = x;
   });
 }
 
 document.querySelector('.close-modal').addEventListener('click', function() {
     modalOverlay.classList.remove('active');
-    modalOverlay.querySelector('iframe').src = "";
   });
   

@@ -9,7 +9,7 @@
 }
 .modal {
     background-color: #fff;
-    width: 90vw;
+    width: 50vw;
     height: 90vh;
     margin: calc(90vh - 85vh) auto;
     position: relative;
@@ -18,18 +18,9 @@
 .modal .close-modal, .fullsize-modal {
     color:#000;
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 20px;
+    top: 20px;
     cursor: pointer;
-}
-.modal .fullsize-modal{
-    right:100px;
-}
-.modal.maximize-modal{
-    width: 100vw;
-    height: 100vh;
-    margin:0px;
-    position: relative;
 }
 
 .modal-overlay.active {
@@ -37,10 +28,12 @@
     visibility: visible;
 }
 
-iframe {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
+.modal-content img {
+    max-width: 100%;
     border: none;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 15px;
+    
 }
