@@ -5,11 +5,14 @@ const modal = document.querySelector('.modal')
 for (let card of cards) {
   card.addEventListener('click', function() {
     const receitaID = card.getAttribute('id');
-    alert(receitaID);
+    const title = card.querySelector('.card__title').textContent;
+    const author = card.querySelector('.card__author').textContent;
+    alert(title);
+    alert(author);
     modalOverlay.classList.add('active');
-    modalOverlay.querySelector(
-      'img'
-    ).src = `assets/${receitaID}`+'.png';
+    modalOverlay.querySelector('img').src = `assets/${receitaID}`+'.png';
+    modalOverlay.querySelector('.modal__title').innerHTML = title;
+    modalOverlay.querySelector('.modal__author').innerHTML = author;
     });
 }
 

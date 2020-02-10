@@ -9,8 +9,8 @@
 }
 .modal {
     background-color: #fff;
-    width: 50vw;
-    height: 90vh;
+    width: 620px;
+    height: 620px;
     margin: calc(90vh - 85vh) auto;
     position: relative;
 }
@@ -33,7 +33,23 @@
     border: none;
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 2%;
     border-radius: 15px;
     
+}
+
+.modal__title {
+    max-width: 100%;
+    border: none;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+}
+
+.modal__author {
+    max-width: 100%;
+    border: none;
+    position: absolute;
+    top: 75%;
+    left: 40%;
 }
